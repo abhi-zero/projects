@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Roboto ;
+    
+}
+
+.main{
+    width: 100%;
+    padding: 70px 85px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-bottom: 150px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav-part3{
+    display: flex;
+    gap: 90px;
+}
+.nav a{
+   text-decoration: none;
+   color:black;
+}
+.nav a:hover, a:focus{
+    border-bottom: 2px solid black;
+}
+
+.heading{
+    padding: 30px 0;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.subtext{
+    font-size: 80px;
+    letter-spacing: -3px;
+    line-height: 170px;
+    padding-bottom: 300px;
+}
+
+
+.content .content-heading{
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.case-cover1{
+    width: 700px;
+    height: 800px;
+    background: url(https://images.unsplash.com/photo-1524439654840-b12734d89414?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    border-radius: 80px; 
+}
+.case-cover2{
+    width: 700px;
+    height: 800px;
+    background: url(https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1905&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    border-radius: 80px; 
+}
+
+.foot{
+    padding: 60px 10px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellowgreen; */
+}
+
+.foot-content h2{
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.foot-content p{
+    font-size: 20px;
+    color: gray;
+}
+
+.foot .btn a{
+    display: inline-block;
+    font-size: 30px;
+    padding: 25px 40px;
+    border-radius:50px ;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+.foot .btn a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.foot .btn a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+
