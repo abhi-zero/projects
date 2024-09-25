@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BGCOLOR:hsl(0, 0%, 8%);
+    --COVER-BG-COLOR:hsl(0, 0%, 12%);
+    --BUTTON-BG-COLOR:hsl(0, 0%, 20%);
+    --TEXT-COLOR:hsl(0, 0%, 100%);
+    --GREEN-COLOR: hsl(75, 94%, 57%);
+}
+
+html,body{
+    height: 95%;
+    width: 100%;
+    font-family:"Inter", sans-serif;
+    color: var(--TEXT-COLOR);
+    background-color: var(--BGCOLOR);
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    
+}
+
+.cover{
+    background-color: var(--COVER-BG-COLOR);
+    height: 700px;
+    max-height: 140vh;
+    min-width: 30vw;
+    max-width: 60vw;
+    padding: 30px 20px 0 20px;
+    border-radius: 15px;
+    
+}
+
+.top .img-section img{
+    width: 100px;
+    border-radius: 50%;  
+}
+.top .img-section{
+    /* background-color: aqua; */
+   display: flex;
+   justify-content: center;
+}
+
+.top>h1{
+    text-align: center;
+    /* background-color:black; */
+    padding-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.top>h3{
+    text-align: center;
+    /* background-color:rgb(149, 38, 38); */
+    padding-bottom:10px ;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--GREEN-COLOR);   
+}
+
+.top>p{
+    text-align: center;
+    font-size: 14px;
+    /* background-color: tomato; */
+    padding: 25px 0;   
+}
+
+.buttons{
+    
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    text-align: center;
+    column-gap: 10px;
+}
+
+.buttons a{
+    color: var(--TEXT-COLOR);
+    background-color: var(--BUTTON-BG-COLOR);
+    text-decoration: none;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    padding: 20px ;
+}
+
+.buttons a:hover, a:focus, a:active{
+    background-color: var(--GREEN-COLOR);
+    color:var(--BGCOLOR)
+}
+
+
+
+.footer .attribution{
+    max-width: 600px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.footer .attribution a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
