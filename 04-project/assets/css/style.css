@@ -16,12 +16,12 @@
 }
 
 html,body{
-    height: 95%;
+    height: 100%;
     width: 100vw;
     font-family:"Inter", sans-serif;
     color: var(--TEXT-COLOR);
     background-color: var(--BGCOLOR);
-    margin:2vw 0;
+    
     display: flex;
     flex-direction: column;
     align-items:center ;
@@ -33,6 +33,7 @@ html,body{
     background-color: var(--COVER-BG-COLOR);
     height: 91%;
     width: 25vw;
+    margin:2vw 0;
     padding: 1.5vw 1.3vw 0 1.3vw;
     border-radius: 15px;
 }
@@ -111,12 +112,12 @@ html,body{
 
 @media(max-width:600px){
     html,body{
-        height:91%;
+        height:100%;
         width: 100vw;
         font-family:"Inter", sans-serif;
         color: var(--TEXT-COLOR);
         background-color: var(--BGCOLOR);
-        margin:13vw 3vw;
+        padding: 15vw 5vw;
         display: flex;
         flex-direction: column;
         align-items:center ;
@@ -125,10 +126,11 @@ html,body{
     }
     .cover{
         background-color: var(--COVER-BG-COLOR);
-        height: 75vh;
+        height: 85vh;
         width: 80vw;
-        padding: 7vw 5vw 0 5vw;
+        padding: 7vw 5vw 5vw 5vw;
         border-radius: 15px;
+        gap: 5vw;
     } 
 
     .top>h1{
