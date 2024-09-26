@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.root{
+    --white:rgb(255, 255, 255);
+    --Stone1:hsl(30, 54%, 90%);
+    --Stone2: hsl(30, 18%, 87%);
+    --Stone3: #5f574e;
+    --Stone4: #302d2c;
+    --Rose: #7b284f;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: outfit;
+}
+
+header{
+    width: 100%;
+    /* background-color: rgb(167, 27, 27); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 163px ;
+}
+header h1{
+    font-size: 35px;  
+    font-weight: 900;
+
+}
+
+nav{
+    display: flex;
+    gap: 8vw;
+}
+
+nav h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+nav i{
+    display: none;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    border-bottom:2px solid black;
+}
+
+.img{
+    
+    display: flex;
+    justify-content: center;
+}
+.img img{
+    border-radius: 25px;
+    object-fit:cover;
+}
+
+main{
+    margin: 10px 170px;
+}
+
+main h1{
+    font-family:"Young Serif", serif;
+    color: #302d2c;
+    font-size: 70px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+ main p{
+    font-size: 20px;
+    font-weight: 400;
+    color:hsl(30, 10%, 34%);
+ }
+
+.list1{
+    /* background-color: brown; */
+   
+    height: 50%;
+    padding:50px;
+    font-size: 20px;
+    color: #7b284f;
+    
+}
+.list1 h4{
+    padding-bottom: 5px;
+    
+}
+.list1 li{
+    padding: 5px;
+    list-style-position: inside;
+    color: #5f574e;
+}
+ span{
+    font-weight: 700;
+    color: #5f574e;
+}
+
+.list2{
+    height: 70%;
+    
+    list-style-position:inside;
+    border-bottom: 1.5px solid #5f574e;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    
+}
+.list2 h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #854632;
+    font-family:"Young Serif", serif;
+    letter-spacing: 1px;
+}
+.list2 li{
+    font-size: 20px;
+    font-weight: 350;
+    color: #5f574e;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #854632;
+    font-family:"Young Serif", serif;
+    letter-spacing: 1px; 
+}
+caption{
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 350;
+    color: #5f574e;
+    text-align: left;
+}
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse:collapse ;
+    
+}
+
+tr, td{
+
+    padding: 20px 30px;
+    font-size: 20px;
+}
+td:nth-child(1){
+   
+    color: #5f574e;
+    border-bottom: 2px solid #7b284f;
+}
+ td:nth-child(2){
+    
+    color: #7b284f;
+    font-weight: 600;
+    border-bottom: 2px solid #7b284f;  
+}
+
+footer{
+    margin: 50px 0 50px 0;
+    padding: 0 0 25px 0;
+    text-align: center;
+}
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #854632;
+}
+footer a:hover{
+    border-bottom:1.5px solid #854632;
+}
+
+
+
+@media (max-width:768px) {
+    header{
+        background-color:var(--white);
+        width: 100%;
+        padding: 20px 30px;
+        /* color: aliceblue; */
+    }
+    header h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    nav h3{
+        display: none;
+    }
+    nav i{
+        display:block;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .img{
+    
+        display: flex;
+        justify-content: center;
+    }
+    .img img{
+        width: 100%;
+        border-radius:0;
+        object-fit:cover;
+    }
+
+    main{
+        margin: 0 30px;
+    }
+
+    main h1{
+        font-family:"Young Serif", serif ;
+        color: #302d2c;
+        font-size: 40px;
+        font-weight: 450;
+        padding: 20px 0;
+        letter-spacing: -2px;
+        line-height: 42px;
+    }
+    main p{
+        font-size: 16px;
+        font-weight: 400;
+        color:#5f574e;
+     }
+     .list1{
+        /* background-color: brown; */
+        height: 50%;
+        padding:35px 0 35px 12px;
+        font-size: 20px;
+        color: #7b284f;
+        letter-spacing: -1.3px;
+        
+    }
+    .list2 li{
+        font-size: 20px;
+        font-weight: 350;
+        color: #5f574e;
+        line-height: 29px;
+    }
+
+    footer {
+        padding:0 70px 0 70px;
+        width: 100vw;
+        font-size: 14px;
+        text-decoration: none;
+
+    }
+}
+
