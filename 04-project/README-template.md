@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/abhi-zero/projects/blob/main/04-project/index.html]
+- Solution URL: [https://github.com/abhi-zero/projects/tree/main/04-project]
 - Live Site URL: [https://abhi-zero.github.io/projects/04-project/]
 
 ## My process

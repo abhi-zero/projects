@@ -19,8 +19,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/abhi-zero/projects/tree/main/05-recipe-page-main]
+- Live Site URL: [https://abhi-zero.github.io/projects/05-recipe-page-main/]
 
 ## My process
  I added additional functionality, which is a navigation bar. It works, allowing you to navigate to different sections of the page, not different pages but sections. I know it's not a big deal, but I wanted to add this just for practice. I am working on the other parts as per the design.
