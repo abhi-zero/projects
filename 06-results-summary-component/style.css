@@ -226,7 +226,6 @@ button{
     font-weight: 600;
     color: var(--White);
     transition: background-color 0.5s;
-    /* transition: active  none; */
 }
 
 button:hover ,button:focus{
