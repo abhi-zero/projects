@@ -266,7 +266,9 @@ button:active{
         background-color:var(--White);
         display: flex;
         flex-direction: column;
-        border-radius: 0 25px 0 25px; 
+       border-radius:  0 0 0 0; 
+       padding-bottom: 0;
+       margin-bottom: 0;
         
     }
     .right-side{
