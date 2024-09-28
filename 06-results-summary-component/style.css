@@ -125,12 +125,12 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
-
+  /* ||LEFTSIDE HEADING  */
 .left-side>h2{
     font-size: 24px;
     font-weight: 700;
 }
-
+   /* SECTIONS  */
 .left-side .line1{
     padding:10px 0 10px 5px;
     border-radius: 10px;
@@ -235,7 +235,8 @@ button:hover ,button:focus{
 button:active{
     background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
 }
-
+ 
+   /* FOOTER  */
 .attribution { 
     padding: 50px 0;
     font-size: 14px;
