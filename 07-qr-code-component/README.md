@@ -12,13 +12,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### Screenshot
 
-![![alt text](image.png)](./screenshot.jpg)
+![![alt text](./images/Screenshot%202024-10-01%20193439.png)](./screenshot.jpg)
 
 ## Overview
 
