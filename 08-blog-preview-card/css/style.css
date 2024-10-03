@@ -140,7 +140,7 @@
   .content a{
    color: var(--Gray-950);
    text-decoration: none;
-   letter-spacing: -2px;
+   letter-spacing: -0.125rem;
   }
  .content a:hover{
   color: var(--Yellow);
