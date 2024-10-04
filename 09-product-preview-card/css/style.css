@@ -144,12 +144,12 @@
         font-weight: 500;
     }
     
-    .content-section span{
+    .content-section div{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     
-    .content-section span h2{
+    .content-section div h2{
 
         color: var(--Dark-cyan);
     }
@@ -215,7 +215,7 @@
         font-size: 1rem;
     }
     
-    .content-section span {
+    .content-section div {
         gap: 25px;
     }
 
