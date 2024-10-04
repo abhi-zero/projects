@@ -1,0 +1,226 @@
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* fraunces-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  * {
+    margin: 0;
+  }
+  
+  
+  body {
+    height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  img,
+  picture, 
+  video, 
+  canvas, 
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  input, 
+  button, 
+  textarea, 
+  select {
+    font: inherit;
+  }
+  
+ 
+  p, 
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root{
+    /* color  */
+
+    /* Primary */
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+  }
+
+
+  .wrapper{
+    background-color: var(--White);
+    height: 600px;
+    width: 330px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+}
+
+  img{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .content-section{
+    padding: 24px;
+    display: grid;
+    grid-template-rows:repeat(5, auto);
+    grid-row: 2;
+    gap:10px;
+    align-items: center;
+  }
+  .content-section h4{
+      font-family: 'Montserrat';
+      font-size: 0.85rem;
+      color: var(--Dark-grayish-blue);
+      font-weight: 500;
+      align-self:center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .content-section h2{
+        font-family: Fraunces;
+        font-size: 1.9rem;
+        color: var(--Very-dark-blue);
+        font-weight: 700;
+        align-self:center;
+        line-height: 1;
+    }
+
+    .content-section p{
+        font-family: 'Montserrat';
+        font-size: 0.875rem;
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+    }
+    
+    .content-section span{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .content-section span h2{
+
+        color: var(--Dark-cyan);
+    }
+    .content-section p{
+        align-self: center;
+    }
+
+    button{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Dark-cyan);
+        border: none;
+        border-radius: 10px;
+        color: var(--White);
+        font-size: 1rem;
+        font-weight: 700;
+        font-family:'Montserrat';
+        transition: background-color .4s;
+        cursor:pointer;
+    }
+    button img{
+        margin-right: 5px;
+        
+    }
+
+    button:hover{
+        background-color: var(--Very-dark-blue);
+    }
+
+
+  @media (min-width : 50rem){
+    .wrapper{
+        height: 502.5px;
+        width: 670px;
+        grid-template-columns:1fr 1fr ;
+        
+    }
+
+    img{
+        border-radius: 10px 0  0 10px ;
+        width: 335px;
+        object-fit: cover;
+    }
+
+
+    .content-section{
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        grid-template-rows: .2fr repeat(4, auto);
+        grid-column: 2;
+        grid-row: 1;
+        gap:10px;
+    }
+    .content-section h2 {
+        font-size: 2.4rem;
+    }
+    
+    .content-section p {
+        font-size: 1rem;
+    }
+    
+    .content-section span {
+        gap: 25px;
+    }
+
+
+    button img {
+        width:16px
+    }
+  }
