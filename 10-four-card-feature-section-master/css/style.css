@@ -1,0 +1,299 @@
+  /* poppins-300 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+  }
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2');
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v21-latin-800.woff2') format('woff2');
+  }
+  /* poppins-900 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+  }
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root{
+    /* ### Primary */
+
+        --Red: hsl(0, 78%, 62%);
+        --Cyan: hsl(180, 62%, 55%);
+        --Orange: hsl(34, 97%, 64%);
+        --Blue: hsl(212, 86%, 64%);
+        --gray: rgb(209, 209, 209);
+
+    /* ### Neutral */
+
+        --Very-Dark-Blue: hsl(234, 12%, 34%);
+        --Grayish-Blue: hsl(229, 6%, 66%);
+        --Very-Light-Gray: hsl(0, 0%, 98%);
+  }
+
+   body{
+    padding: 100px 20px;
+   }
+  .grid-container{
+      font-family: 'Poppins';
+      display:grid;
+      gap: 3em;
+      grid-template-rows: 1fr auto ;
+    }
+
+    .heading{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      text-align: center;
+    } 
+
+    .heading .light-heading{
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--Very-Dark-Blue);
+    }
+    
+    .heading .bold-heading{
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--Very-Dark-Blue);
+    }
+
+    .heading .tag-line{
+      width:330px ;
+      padding: 25px 0;
+      font-size: 1rem;
+      color: var(--Grayish-Blue);
+    }
+
+    .card-section{
+      
+      display: grid;
+      gap: 2rem;
+      grid-template-rows: repeat(4, 1fr);
+      justify-self: center;
+      
+    } 
+    .card-section .card-border-color1 {
+      border-top:4px solid  var(--Cyan);
+      border-radius: 5px;
+    }
+    .card-section .card-border-color2 {
+      border-top:4px solid  var(--Red);
+      border-radius: 5px;
+    }
+    .card-section .card-border-color3 {
+      border-top:4px solid  var(--Orange);
+      border-radius: 5px;
+    }
+    .card-section .card-border-color4 {
+      border-top:4px solid  var(--Blue);
+      border-radius: 5px;
+    }
+    
+    .card-section .card{
+      width: 20rem;
+      border-radius: 5px;
+      padding: 20px;
+      display: grid;
+      gap: 10px;
+      grid-template-rows: auto 1fr 2fr;
+      align-items: center;
+      color: var(--Very-Dark-Blue);
+      position: relative;
+      box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.142);
+      cursor: pointer;
+    }
+
+    .card-section .card:hover{
+
+        background-color: var(--gray);
+
+    } 
+
+    
+    
+    
+    .card-section .card .card-heading{
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 2px 0;
+    }
+
+    .card-section .card .card-description{
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 2px 0;
+      color:var(--Grayish-Blue)
+    }
+
+    .card-section .card .image-section {
+      position: absolute;
+      bottom: 20px;
+      right : 20px;
+    }
+
+    footer{
+      /* width:220px; */
+      margin-top: 25px;
+      
+    }
+    footer .attribution{
+      font-size: 0.825rem;
+      font-weight: 400;
+      text-align: center;
+      
+    }
+
+    
+
+
+    @media (min-width:44em){
+      body{
+        padding: 50px 50px;
+       }
+
+      .heading .light-heading{
+        font-size: 2rem;
+      }
+
+      .heading .bold-heading{
+        font-size: 2rem;
+       
+      }
+      .heading .tag-line{
+        padding: 20px 0;
+        width: 31.25rem;
+       
+      }
+
+      .card-section{
+        width: auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(autofit, min-max(200px, 1fr));
+        grid-template-rows: 1fr;
+        justify-self: center;
+        
+      } 
+      
+      .card-section .card-border-color1 {
+        
+        grid-row: span 2;
+        grid-column: 1;
+        align-self: center;
+        
+      }
+      .card-section .card-border-color2 {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .card-section .card-border-color3 {
+        grid-column: 2;
+        grid-row: 2;
+      
+      }
+      .card-section .card-border-color4 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        align-self: center;
+      }
+
+    }
