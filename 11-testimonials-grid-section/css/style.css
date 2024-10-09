@@ -106,7 +106,7 @@ body{
 .grid-main{
   display: grid;
   gap: 20px;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows:auto; 
 }
 
