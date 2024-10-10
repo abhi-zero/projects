@@ -257,7 +257,13 @@ footer {
 
 
 @media (min-width : 37em) {
-
+  
+  .card {
+   
+    margin: 130px auto;
+   
+  }
+  
 
   .image-section .image {
     cursor: pointer;
