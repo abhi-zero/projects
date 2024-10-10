@@ -1,0 +1,290 @@
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/outfit-v11-latin-300.woff2') format('woff2');
+}
+
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2');
+}
+
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/outfit-v11-latin-600.woff2') format('woff2');
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--White);
+  background-color: var(--Very-dark-blue-mainBG);
+  font-family: 'Outfit';
+  height: 100dvh;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  color: var(--Soft-blue);
+  font-size: var(--fs-paragraph);
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+
+  /* ##font size  */
+  --fs-paragraph: 1.1rem;
+}
+
+
+
+.card {
+  width: 330px;
+  height: 550px;
+  margin: 50px auto;
+  background-color: var(--Very-dark-blue-cardBG);
+  border-radius: 15px;
+}
+
+.image-section .image {
+  position: relative;
+  padding: 20px;
+}
+
+
+.image-section .image .clay-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.415);
+  width: 87%;
+  height: 87%;
+  border-radius: 10px;
+}
+
+.image-section .image .eye-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.image-section .image .main-image {
+  opacity: 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.grid-content {
+
+  padding: 0 20px 20px;
+  align-items: center;
+}
+
+
+.grid-main-content {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: repeat(3, auto);
+  padding-bottom: 10px;
+
+  align-items: center;
+}
+
+
+
+
+.title a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.flex-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--fs-paragraph);
+}
+
+.short-title {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+
+}
+
+.short-title .icon {
+  width: 10px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.short-title p {
+  color: var(--Cyan);
+}
+
+.offer-time {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+}
+
+.offer-time .icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.creater-info {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto 1fr;
+  padding: 15px 0;
+  border-top: 2px solid var(--Very-dark-blue-line);
+}
+
+.creater-info img {
+  width: 32px;
+  border: 1.5px solid var(--White);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.creater-info a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+
+@media (min-width : 37em) {
+
+
+  .image-section .image {
+    cursor: pointer;
+  }
+
+  .image-section .image .clay-color {
+    transition: opacity .3s;
+  }
+
+  .image-section .image .clay-color:hover {
+    opacity: 1;
+
+
+  }
+
+  a {
+    transition: color .3s;
+  }
+
+  a:hover {
+
+    color: var(--Cyan)
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+}
